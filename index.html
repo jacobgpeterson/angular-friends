@@ -23,7 +23,13 @@
 
   <!--<input class="form-control" placeholder="Search Anything About Your Friends" ng-model="filterFriends">-->
     <input class="form-control" placeholder="Search Your Friends' Name" ng-model="filterFriends.name">
-    <input class="form-control" placeholder="Search Your Freinds' Location" ng-model="filterFriends.current_location"> 
+    <input class="form-control" placeholder="Search Your Freinds' Location" ng-model="filterFriends.current_location">
+
+<!--    <select class="input-medium" ng-model="filterFriends" ng-options="friend.value as friend.label for friend in filterOptions">
+          <option value="">Choose One</option>
+            option
+        </select>
+ -->
     <select class="input-medium" ng-model="sortOption1">
         <option value="name">Name</option>
         <option value="friend_count * 1"># friends</option>
@@ -45,7 +51,7 @@
       <div class='location'>
         {{friend.current_location.name}} - {{friend.current_location.country}}
       <div class='status'>
-        Status: {{friend.status.message}}<span class="hashtag"></span>
+        Status: {{friend.status.message}}
       </div>
       <div class="num-friends">
         Friends: {{friend.friend_count}}

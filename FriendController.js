@@ -5,6 +5,14 @@ app.controller('friendController', function($scope){
 
 	$scope.sortOption2;
 
+    // $scope.filterOptions = [ 
+    //     {value: "name", label: "Name"},
+    //     {value: "friend_count", label:"# friends"},
+    //     {value: "current_location.city", label: "City"},
+    //     {value: "current_location.state", label: "State"},
+    //     {value: "current_location.country", label: "Country"},
+    // ]
+
 	$scope.friends = 
 	[
     {
